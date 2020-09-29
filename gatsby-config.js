@@ -1,8 +1,15 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Contentful Blog`,
+    description: `Write your site description here!`,
+    author: `Muhammad Tayyab`,
+    social: {
+      twitter: `Muhamma45165722`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,8 +34,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: `y5dmf9a605x5`,
+        accessToken: `yQ1oaWU1e3zF3PgV1UQFoReHZ2u2bmAnMDh9b_oxV_g`,
+        forceFullSync: true,
+      },
+    },
+    "gatsby-plugin-typescript",
   ],
 }
