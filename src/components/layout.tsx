@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         <footer style={{
           marginTop: `2rem`
         }}>
-         <a href="Muhamma45165722">Twiter</a>
+         
           © {new Date().getFullYear()}, Built with Gatsby
           <br/>
         </footer>
