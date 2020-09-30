@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Bio from "../components/bio"
 
 const IndexPage = () => (
-  <Layout>gatsby develop
+  <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to My new Gatsby Blog.</p>
