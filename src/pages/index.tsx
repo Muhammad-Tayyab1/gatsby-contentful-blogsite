@@ -6,16 +6,17 @@ import SEO from "../components/seo"
 import Bio from "../components/bio"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout>gatsby develop
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to My new Gatsby Blog.</p>
     <Bio/>
+    <Link to="/blog/">Vist my Blog
+    </Link> <br /><a href="https://twitter.com/muhamma45165722">Twitter</a>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/blog/">Blog</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+   
   </Layout>
 )
 
