@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import Footer from './Footer'
 import Header from "./header"
 import "./layout.css"
 
@@ -22,18 +22,13 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: "100%",
+          padding:'5px',
+          textAlign:'center',
         }}
       >
         <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-         
-          © {new Date().getFullYear()}, Built with Gatsby
-          <br/>
-        </footer>
+        <Footer/>
       </div>
     </>
   )
