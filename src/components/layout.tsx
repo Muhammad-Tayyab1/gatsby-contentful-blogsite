@@ -28,8 +28,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Footer/>
       </div>
+      <div style={{maxWidth:'100%', justifyContent:'center'}}>
+        <Footer/></div>
     </>
   )
 }
